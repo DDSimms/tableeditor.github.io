@@ -395,9 +395,9 @@ border-bottom: 2px solid black;
 
  <center>
 <fieldset style="background:url(https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=500);width:70%;border:0px solid lightgrey;">
- <br><span style="background-color:rgba(123, 239, 178, .76)"><font style="color:burlywhite;font-family: 'Courier New', monospace;">Plotly.JS and more. <a href="about" style="color:black">About</a>| thanks to open source contributors</font> </span><br><i>Load Datasets: </i><div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);"onclick="make_data_1()"><font size=1>🍦 Diabetes</font></button></div><div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> ⌛ Life-Expectancy </font></button></div><br>
+ <br><i>Load Datasets: </i><div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);"onclick="make_data_1()"><font size=1>Example Dataset</font></button></div><br>
 
-<div class="dropdown"><button class="dropbtn" type="button" id="thistest"><font size=1><i class="fa fa-download"></i> Download Table</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addRow()"><font size=1>Add row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addColumn()"><font size=1>Add column</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteRow()"><font size=1>Delete row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteColumn()"><font size=1>Delete column</font></button></div><div class="dropdown"><form style="display:inline;margin:0px;padding:0px;" action = "/verify_table" method = "post" enctype="multipart/form-data"><label for="the_file" class="the_file_upload"><font size=1><b>Upload Dataset </b>.csv, .xlsx, .json, .sqlite <b>< 800 KB</b></font></label><input onclick="document.getElementById('hidden_submit').style.display='block';" style="width:300px;" type=file name= "file" id="the_file"><div style="display:none;" id="hidden_submit"><input class="button the_file_upload_2" type="submit" name='view' value="Upload Dataset"></div></form></div>
+<div class="dropdown"><button class="dropbtn" type="button" id="thistest"><font size=1><i class="fa fa-download"></i> Download Table</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addRow()"><font size=1>Add row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addColumn()"><font size=1>Add column</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteRow()"><font size=1>Delete row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteColumn()"><font size=1>Delete column</font></button></div><div class="dropdown"></div>
 <br>
 
 <div id="div1">
@@ -587,14 +587,6 @@ height:57px;background-color: rgba(255,255,255,0.7);"id='the_new_tab'>
 <div class='dropdown'><button class='dropbtn'></button></div>
 <div id='myDiv'></div>
 <div id='myDiv_2'></div>
-<br>
-<div style="background-color:#80ced6"><h3><font style="font-family: 'Courier New', monospace;">How-to guide:</font></h3><a href="how_to" style="color:black">Data Visualization</a><br><br><a href="stats" style="color:black">Statistics Reference</a><br><br></div>
-<br><div style="background-color:lightblue"><h3><font style="font-family: 'Courier New', monospace;">Web Development and Statistics:</font></h3><a href="flask_tutorial" style="color:black"> Web Development with Python and Flask</a><br><br><a href="dec_bounds" style="color:black"> Decision Boundaries with MLXtend</a><br><br><a href="linear_population_growth" style="color:black"> Linear Population Growth with Mactrices</a><br><br><a href="Regression" style="color:black"> Statistical Regression as an Optimization</a><br><br></div>
-<br></fieldset><fieldset style="background-color:white;width:70%;border:0px solid lightgrey"><font style="font-family: 'Courier New', monospace;">TableAnalysis is on Medium:</font><br>
-<div id="medium-widget"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@ddsim","postsPerLine":2,"limit":4,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>
-
 <script>
 function chi2g(){
 var num_rows=document.getElementById('myTable').rows.length;
