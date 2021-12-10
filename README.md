@@ -394,12 +394,9 @@ border-bottom: 2px solid black;
 <body>
  <center>
 <fieldset style="background:url(https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=500);width:70%;border:0px solid lightgrey;">
-<div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> Example Dataset </font></button></div><br>
-
-<div class="dropdown"><button class="dropbtn" type="button" id="thistest"><font size=1><i class="fa fa-download"></i> Download Table</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addRow()"><font size=1>Add row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addColumn()"><font size=1>Add column</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteRow()"><font size=1>Delete row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteColumn()"><font size=1>Delete column</font></button></div><div class="dropdown"><form style="display:inline;margin:0px;padding:0px;" action = "/verify_table" method = "post" enctype="multipart/form-data"><label for="the_file" class="the_file_upload"><font size=1><b>Upload Dataset </b>.csv, .xlsx, .json, .sqlite <b>< 800 KB</b></font></label><input onclick="document.getElementById('hidden_submit').style.display='block';" style="width:300px;" type=file name= "file" id="the_file"><div style="display:none;" id="hidden_submit"><input class="button the_file_upload_2" type="submit" name='view' value="Upload Dataset"></div></form></div>
+<div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> Example Dataset </font></button></div>
+<div class="dropdown"><button class="dropbtn" type="button" id="thistest"><font size=1><i class="fa fa-download"></i> Download Table</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addRow()"><font size=1>Add row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addColumn()"><font size=1>Add column</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteRow()"><font size=1>Delete row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteColumn()"><font size=1>Delete column</font></button></div>
 <br>
-
-
 <div id="div1">
 <table style="border-top: 2px solid black;
 border-bottom: 2px solid black;
@@ -539,13 +536,14 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 📄+</font></button></div><div class="dropdown"><button onclick="catgraph()" style="height:32px" class='dropbtn'><font size=3>🔀🔀🔀</font></button></div><div class="dropdown"><button onclick="graph()" style="height:32px" class='dropbtn'><font size=3>📉📈📉</font></button></div><div class="dropdown"><button style="height:32px" class= "dropbtn" onclick="catogram();histogram()"><font size=3>📊📊📊</font></button></div><div class="dropdown"><button style="height:32px" class= "dropbtn" onclick="box()"><font size=3>🎻🎻🎻</font></button></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>🕒</font></button><div class="dropdown-content"><a><b>Time Series</b>:<hr><input type="text" id="the_time_variable" placeholder="Variable (column name)"><br><input type="text" id="the_time" placeholder="Date (column name)"><button class="button button7" onclick="time()"><font size=4>Submit</font></button></a></div></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>🌎</font></button><div class="dropdown-content"><a><b>Choropleth (Map)</b>:<br><font size=1>(Mean values per region)</font><hr><input type="text" id="the_locations" placeholder="Locations(column name)"><br><input type="text" id="the_map_values" placeholder="Values (column name)"><br><input type="radio" id="mapper" value="Countries"><label>World Countries (e.g. 'Japan','United States')</label><br><br>
 <input type="radio" id="mapper" value="USA"><label>US States (e.g. 'NY', 'CO')</label>
 <br><button class="button button7" onclick="maps()">
-<font size=4>Submit</font></button></a></div></div><button style="height:32px" class='dropbtn' onclick="did_they();Play()"><font size=3>
-💣</font></button> </div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>⚪</font></button><div class="dropdown-content">
+<font size=4>Submit</font></button></a></div></div><div class="dropdown"><button style="height:32px" class='dropbtn' onclick="did_they();Play()"><font size=3>
+💣</font></button></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>⚪</font></button><div class="dropdown-content">
 <a><b>Venn Diagram</b>:<input id="first_ven" type="text" name="dist_x" placeholder="A (column name)"><input id="second_ven" type="text" name="dist_x2" placeholder="B (column name)"> <input id="first_venn" type="text" name="dist_x_sub" placeholder="A subgroup"><input id="second_venn" type="text" name="dist_x2_sub" placeholder="B subgroup"><br>
 
   <button id="AintB" onclick="venndiagramo()">(A ∩ B)</button></a></div></div>
 
-<br><br>
+<br><div id='myDiv'></div>
+<div id='myDiv_2'></div><br>
 <div id="the_new_table">
 <table id='the_new_tab'>
 <tr><td> <div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td></tr>
@@ -562,8 +560,7 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 <label for="linear">Linear</label><input type="radio" id="logistic" name="The_type" value="logistic">
 <label for="logistic">Logistic</label><br><button formtarget="_blank" onclick="to_python_format_5()" type="submit" id="regr" name="regr">Calculate</button></form></a></div></div></a></div></div>
 <div class='dropdown'><button class='dropbtn'></button></div>
-<div id='myDiv'></div>
-<div id='myDiv_2'></div>
+
 <br>
 <div style="background-color:#80ced6"><h3><font style="font-family: 'Courier New', monospace;">How-to guide:</font></h3><a href="how_to" style="color:black">Data Visualization</a><br><br><a href="stats" style="color:black">Statistics Reference</a><br><br></div>
 <br><div style="background-color:lightblue"><h3><font style="font-family: 'Courier New', monospace;">Web Development and Statistics:</font></h3><a href="flask_tutorial" style="color:black"> Web Development with Python and Flask</a><br><br><a href="dec_bounds" style="color:black"> Decision Boundaries with MLXtend</a><br><br><a href="linear_population_growth" style="color:black"> Linear Population Growth with Mactrices</a><br><br><a href="Regression" style="color:black"> Statistical Regression as an Optimization</a><br><br></div>
