@@ -547,8 +547,7 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 </table></div>
 
 <div class="dropdown"><button class="dropbtn" style="height:32px;" type="button" onclick="math_again()"><font size=3>
-📄+</font></button></div><div class="dropdown"><button onclick="catgraph()" style="height:32px" class='dropbtn'><font size=3>🔀🔀🔀</font></button></div><div class="dropdown"><button onclick="graph()" style="height:32px" class='dropbtn'><font size=3>📉📈📉</font></button></div><div class="dropdown"><button style="height:32px" class= "dropbtn" onclick="catogram();histogram()"><font size=3>📊📊📊</font></button></div><div class="dropdown"><button style="height:32px" class= "dropbtn" onclick="box()"><font size=3>🔢🔢🔢</font></button></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>🕒<font></button><div class="dropdown-content"><a><b>Time Series</b>:<hr><input type="text" id="the_time_variable" placeholder="Variable (column name)"><br><input type="text" id="the_time" placeholder="Date (column name)"><button class="button button7" onclick="time()">
-<font size=4>Submit</font></button></a></div></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>🌎</font></button><div class="dropdown-content"><a><b>Choropleth (Map)</b>:<br><font size=1>(Mean values per region)</font><hr><input type="text" id="the_locations" placeholder="Locations(column name)"><br><input type="text" id="the_map_values" placeholder="Values (column name)"><br><input type="radio" id="mapper" value="Countries"><label>World Countries (e.g. 'Japan','United States')</label><br><br>
+📄+</font></button></div><div class="dropdown"><button onclick="catgraph()" style="height:32px" class='dropbtn'><font size=3>🔀🔀🔀</font></button></div><div class="dropdown"><button onclick="graph()" style="height:32px" class='dropbtn'><font size=3>📉📈📉</font></button></div><div class="dropdown"><button style="height:32px" class= "dropbtn" onclick="catogram();histogram()"><font size=3>📊📊📊</font></button></div><div class="dropdown"><button style="height:32px" class= "dropbtn" onclick="box()"><font size=3>🎻🎻🎻</font></button></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>🕒<font><div class="dropdown-content"><a><b>Time Series</b>:<hr><input type="text" id="the_time_variable" placeholder="Variable (column name)"><br><input type="text" id="the_time" placeholder="Date (column name)"><button class="button button7" onclick="time()"><font size=4>Submit</font></button></a></div></div><div class="dropdown"><button style="height:32px" class='dropbtn'><font size=3>🌎</font></button><div class="dropdown-content"><a><b>Choropleth (Map)</b>:<br><font size=1>(Mean values per region)</font><hr><input type="text" id="the_locations" placeholder="Locations(column name)"><br><input type="text" id="the_map_values" placeholder="Values (column name)"><br><input type="radio" id="mapper" value="Countries"><label>World Countries (e.g. 'Japan','United States')</label><br><br>
 <input type="radio" id="mapper" value="USA"><label>US States (e.g. 'NY', 'CO')</label>
 <br><button class="button button7" onclick="maps()">
 <font size=4>Submit</font></button></a></div></div><div class="dropdown_5"><button style="height:32px" class='dropbtn_5'><font size=3>📚🤖📚 <font></button><div class="dropdown-content_5">
@@ -1146,63 +1145,63 @@ if(isNaN(tab.rows[1].cells[i].innerText)===false){
 var trace1 = {
   name: cs[0],
   y: cs[1],
-  type: 'box'
+  type: 'violin'
 };
 
 var trace2 = {
   name:cs[2],
   y: cs[3],
-  type: 'box'
+  type: 'violin'
 };
 var trace3 = {
   name:cs[4],
   y: cs[5],
-  type: 'box'
+  type: 'violin'
 };
 var trace4 = {
   name:cs[6],
   y: cs[7],
-  type: 'box'
+  type: 'violin'
 };
 var trace5 = {
   name:cs[8],
   y: cs[9],
-  type: 'box'
+  type: 'violin'
 };
 var trace6 = {
   name:cs[10],
   y: cs[11],
-  type: 'box'
+  type: 'violin'
 };
 var trace7 = {
   name:cs[12],
   y: cs[13],
-  type: 'box'
+  type: 'violin'
 };
 var trace8 = {
   name:cs[14],
   y: cs[15],
-  type: 'box'
+  type: 'violin'
 };
 var trace9 = {
   name:cs[16],
   y: cs[17],
-  type: 'box'
+  type: 'violin'
 };
 var trace10 = {
   name:cs[18],
   y: cs[19],
-  type: 'box'
+  type: 'violin'
 };
 var trace11 = {
   name:cs[20],
   y: cs[21],
-  type: 'box'
+  type: 'violin'
 };
 var trace12 = {
   name:cs[22],
   y: cs[23],
-  type: 'box'
+  type: 'violin'
 };
 
 var data = [trace1, trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12];
