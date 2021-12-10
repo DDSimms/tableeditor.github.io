@@ -6,7 +6,7 @@
     <meta charset="utf-8" name="viewport"
         content= "width=device-width, initial-scale=1.0">
 
-    <title>Table Analysis</title>
+    <title>Table Analysis testing</title>
     <script data-ad-client="ca-pub-7062516577120484" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <script src='https://unpkg.com/simple-statistics@7.3.0/dist/simple-statistics.min.js'>
