@@ -393,20 +393,7 @@ border-bottom: 2px solid black;
 </head>
 <body>
 
-<!-- Top navigation -->
-<div class="topnav">
-
-  <!-- Centered link -->
-  <div class="topnav-centered">
-    <a href="#home" class="active"><span style="font-size:30px;cursor:pointer;position: absolute;left:15;top:15" onclick="openNav()"><font style="color:grey">&#9776;</font></span><font style="font-size:30px;color:lightgrey;"> Table Analysis </font></a>
-  </div>
-</div>
-
-
-
- <center>
-<fieldset style="background:url(https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=500);width:70%;border:0px solid lightgrey;">
- <br><span style="background-color:rgba(123, 239, 178, .76)"><font style="color:burlywhite;font-family: 'Courier New', monospace;">Plotly.JS and more. <a href="about" style="color:black">About TESTING</a>| thanks to open source contributors</font> </span><br><div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> Example Dataset </font></button></div><br>
+<div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> Example Dataset </font></button></div><br>
 
 <div class="dropdown"><button class="dropbtn" type="button" id="thistest"><font size=1><i class="fa fa-download"></i> Download Table</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addRow()"><font size=1>Add row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addColumn()"><font size=1>Add column</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteRow()"><font size=1>Delete row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteColumn()"><font size=1>Delete column</font></button></div>
 <br>
