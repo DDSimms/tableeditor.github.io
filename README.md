@@ -547,9 +547,7 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 <div id="the_new_table">
 <table id='the_new_tab'>
 <tr><td> <div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td></tr>
-</table></div><div class='dropdown'><button class="dropbtn" onclick="sumation()"><font size=4>∑</font></button></div><div class='dropdown'><button class="dropbtn" onclick="mean()"><font size=4>µ ±</font></button></div><div class='dropdown'><button class="dropbtn" onclick="corr()"><font size=4>Corr(r)</font></button></div><div class='dropdown'><button class="dropbtn" onclick="two()"><font size=4>t-test</font></button></div><div class="dropdown_2"><button style="height:32px" class='dropbtn_2'><font size=4>χ2 tests<font></button><div class="dropdown-content_2"><b>Contingency Table/Test of Independence</b>:<hr><form method="post" action="crosstab_post"><input type="text" name="columns1" placeholder="cat_1 (column name)"><input type="text" name="columns2" placeholder="cat_2 (column name)">
-
-  <button formtarget="_blank" onclick="to_python_format_2()" type="submit" id="cross" name="group_post">Calculate</button></form><div class="dropdown_3"><b>Goodness of fit</b><hr>
+</table></div><div class='dropdown'><button class="dropbtn" onclick="sumation()"><font size=4>∑</font></button></div><div class='dropdown'><button class="dropbtn" onclick="mean()"><font size=4>µ ±</font></button></div><div class='dropdown'><button class="dropbtn" onclick="corr()"><font size=4>Corr(r)</font></button></div><div class='dropdown'><button class="dropbtn" onclick="two()"><font size=4>t-test</font></button></div><div class="dropdown_3"><button class="dropbtn_2"><font size=4>Corr(r)</font><a><b>Goodness of fit</b><hr>
 <label for="male">Bernoulli</label><input type="radio" id="Bernoulli" name="spec_group" value="Bernoulli"><br>
 <label for="female">Binomial</label>
 <input type="radio" id="Binomial" name="spec_group" value="Binomial">
@@ -561,13 +559,6 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 <label for="logistic">Logistic</label><br><button formtarget="_blank" onclick="to_python_format_5()" type="submit" id="regr" name="regr">Calculate</button></form></a></div></div></a></div></div>
 <div class='dropdown'><button class='dropbtn'></button></div>
 
-<br>
-<div style="background-color:#80ced6"><h3><font style="font-family: 'Courier New', monospace;">How-to guide:</font></h3><a href="how_to" style="color:black">Data Visualization</a><br><br><a href="stats" style="color:black">Statistics Reference</a><br><br></div>
-<br><div style="background-color:lightblue"><h3><font style="font-family: 'Courier New', monospace;">Web Development and Statistics:</font></h3><a href="flask_tutorial" style="color:black"> Web Development with Python and Flask</a><br><br><a href="dec_bounds" style="color:black"> Decision Boundaries with MLXtend</a><br><br><a href="linear_population_growth" style="color:black"> Linear Population Growth with Mactrices</a><br><br><a href="Regression" style="color:black"> Statistical Regression as an Optimization</a><br><br></div>
-<br></fieldset><fieldset style="background-color:white;width:70%;border:0px solid lightgrey"><font style="font-family: 'Courier New', monospace;">TableAnalysis is on Medium:</font><br>
-<div id="medium-widget"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@ddsim","postsPerLine":2,"limit":4,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>
 
 <script>
 function chi2g(){
