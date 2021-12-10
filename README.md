@@ -392,45 +392,9 @@ border-bottom: 2px solid black;
 </style>
 </head>
 <body>
-
-<!-- Top navigation -->
-<div class="topnav">
-
-  <!-- Centered link -->
-  <div class="topnav-centered">
-    <a href="#home" class="active"><span style="font-size:30px;cursor:pointer;position: absolute;left:15;top:15" onclick="openNav()"><font style="color:grey">&#9776;</font></span><font style="font-size:30px;color:lightgrey;"> Table Analysis </font></a>
-  </div>
-</div>
-
-<div class="sidenav" id="mySidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="home">Home</a>
-  <a href="about">About Us</a>
-  <a href="contact">Contact Us</a>
-</div>
-<div class="topnav-right">
-    <a><span id='google_search'><script async src="https://cse.google.com/cse.js?cx=3f530d2bbcaf53980"></script>
-<div id="cse" style="width: 20%;position: absolute;
-right: 0;top:7">
-<div class="gcse-search"></div></div></span></a>
-  </div>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
-</script>
-
  <center>
 <fieldset style="background:url(https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=500);width:70%;border:0px solid lightgrey;">
- <br><span style="background-color:rgba(123, 239, 178, .76)"><font style="color:burlywhite;font-family: 'Courier New', monospace;">Plotly.JS and more. <a href="about" style="color:black">About</a>| thanks to open source contributors</font> </span><br><i>Load Datasets: </i><div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);"onclick="make_data_1()"><font size=1>🍦 Diabetes</font></button></div><div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> ⌛ Life-Expectancy </font></button></div><br>
+<div class="dropdown"><button class="dropbtn" type="button" style="background-color:rgba(255,200,255,0.6);" onclick="make_data_2()"><font size=1> Example Dataset </font></button></div><br>
 
 <div class="dropdown"><button class="dropbtn" type="button" id="thistest"><font size=1><i class="fa fa-download"></i> Download Table</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addRow()"><font size=1>Add row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="addColumn()"><font size=1>Add column</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteRow()"><font size=1>Delete row</font></button></div><div class="dropdown"><button class="dropbtn" type="button" onclick="deleteColumn()"><font size=1>Delete column</font></button></div><div class="dropdown"><form style="display:inline;margin:0px;padding:0px;" action = "/verify_table" method = "post" enctype="multipart/form-data"><label for="the_file" class="the_file_upload"><font size=1><b>Upload Dataset </b>.csv, .xlsx, .json, .sqlite <b>< 800 KB</b></font></label><input onclick="document.getElementById('hidden_submit').style.display='block';" style="width:300px;" type=file name= "file" id="the_file"><div style="display:none;" id="hidden_submit"><input class="button the_file_upload_2" type="submit" name='view' value="Upload Dataset"></div></form></div>
 <br>
