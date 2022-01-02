@@ -546,17 +546,12 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 <div id="the_new_table">
 <table id='the_new_tab'>
 <tr><td> <div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td></tr>
-</table></div><div class='dropdown'><button class="dropbtn" onclick="sumation()"><font size=4>∑</font></button></div><div class='dropdown'><button class="dropbtn" onclick="mean()"><font size=4>µ ±</font></button></div><div class='dropdown'><button class="dropbtn" onclick="corr()"><font size=4>Corr(r)</font></button></div><div class='dropdown'><button class="dropbtn" onclick="two()"><font size=4>t-test</font></button></div><div class="dropdown_3"><button class="dropbtn_2"><font size=4>Corr(r)</font><a><b>Goodness of fit</b><hr>
+</table></div><div class='dropdown'><button class="dropbtn" onclick="sumation()"><font size=4>∑</font></button></div><div class='dropdown'><button class="dropbtn" onclick="mean()"><font size=4>µ ±</font></button></div><div class='dropdown'><button class="dropbtn" onclick="corr()"><font size=4>Corr(r)</font></button></div><div class='dropdown'><button class="dropbtn" onclick="two()"><font size=4>t-test</font></button></div><div class="dropdown_3"><button class="dropbtn_2">testing</button><a>
 <label for="male">Bernoulli</label><input type="radio" id="Bernoulli" name="spec_group" value="Bernoulli"><br>
 <label for="female">Binomial</label>
 <input type="radio" id="Binomial" name="spec_group" value="Binomial">
 <label for="male">Poisson</label><input type="radio" id="Poisson" name="spec_group" value="Poisson"><br>
-  <button onclick="chi2g()">Calculate</button></a></div></div></div></div><div class="dropdown_3">
-<button style="height:32px" class='dropbtn_3'><font size=4>^β0+^β1x+^β2x<font></button><div class="dropdown-content_3">
-<a><b>Regression Model (Statsmodels)</b>:<br><form method="post" action="regr"><input type="text" name="Pred_x1" placeholder="x (column name)"><input type="text" name="Pred_x2" placeholder="x2 (column name)"><br><input type="text" name="Pred_x3" placeholder="x3 (column name)"><br><input type="text" name="Pred_y" placeholder="y (column name)"><br><input type="radio" id="linear" name="The_type" value="linear">
-<label for="linear">Linear</label><input type="radio" id="logistic" name="The_type" value="logistic">
-<label for="logistic">Logistic</label><br><button formtarget="_blank" onclick="to_python_format_5()" type="submit" id="regr" name="regr">Calculate</button></form></a></div></div></a></div></div>
-<div class='dropdown'><button class='dropbtn'></button></div>
+	<button onclick="chi2g()">Calculate</button></a></div>
 
 
 <script>
