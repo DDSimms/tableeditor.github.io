@@ -547,10 +547,10 @@ display:block;background-color: rgba(255,255,255,0.5);" id="myTable">
 <table id='the_new_tab'>
 <tr><td> <div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td><td><div style="height:25px;width:57px" contenteditable></div></td></tr>
 </table></div><div class='dropdown'><button class="dropbtn" onclick="sumation()"><font size=4>∑</font></button></div><div class='dropdown'><button class="dropbtn" onclick="mean()"><font size=4>µ ±</font></button></div><div class='dropdown'><button class="dropbtn" onclick="corr()"><font size=4>Corr(r)</font></button></div><div class='dropdown'><button class="dropbtn" onclick="two()"><font size=4>t-test</font></button></div><div class="dropdown_3"><button class="dropbtn_2">testing</button><a>
-<label for="male">Bernoulli</label><input type="radio" id="Bernoulli" name="spec_group" value="Bernoulli"><br>
-<label for="female">Binomial</label>
-<input type="radio" id="Binomial" name="spec_group" value="Binomial">
-<label for="male">Poisson</label><input type="radio" id="Poisson" name="spec_group" value="Poisson"><br>
+<label for="male">Bernoulli</label><input type="radio" id="Bernoulli" name="spec_group" value="Bernoulli"></a><br>
+<a><label for="female">Binomial</label>
+<input type="radio" id="Binomial" name="spec_group" value="Binomial"></a>
+<a><label for="male">Poisson</label><input type="radio" id="Poisson" name="spec_group" value="Poisson"></a><br>
 	<button onclick="chi2g()">Calculate</button></a></div>
 
 
